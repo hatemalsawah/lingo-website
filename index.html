@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PrimeLingo is a professional translation and localization services agency that specialized in English
+     to Arabic solutions. Our team of professional translators is very talented and creative, with supreme qualifications to back them up. 
+     They’re skilled linguists with much expertise in the subject matter"
+    />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <title>PrimeLingo - Your Arabic Content Partner</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+
+    <!-- S T A R T   N A V H E A D E R   -->
+    <header>
+     
+      <a href="#" class="logo"
+        ><img src="images/logo.png" alt="logo" srcset=""
+      /></a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#OurServices">Our Services</a>
+        <a href="#industries">Industries</a>
+        <a href="#review">Review</a>
+        <a href="#about">About US</a>
+        <a href="#contact">Contact US</a>
+        <a href="arabic.html">العربية</a>
+      </nav>
+      <div id="menu-bar" class="fas fa-bars" onclick="showmenu()"></div>
+
+    </header>
+     <!--F O R M   O F   F R E E   Q U O T E  -->
+    <div class="login-form">
+      <i class="fas fa-times" id="form-close" onclick="hideform()"></i>
+               
+      <form
+        class="form-contact contact_form col-xs-3"
+        action="contact_process.php"
+        method="post"
+        id="contactForm"
+        novalidate="novalidate"
+        enctype="multipart/form-data"
+      >
+        <div class="form-group">
+          <label for="from" class="h5-form"
+            >We offer the most competitive pricing for translation and
+            localization services, as well as unyielding commitment to deadlines
+            :</label
+          >
+
+          <select class="form-control input" name="from">
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Italian">Italian</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Greek">Greek</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="to" class="title-put">To:</label>
+          <select class="form-control" name="to">
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Italian">Italian</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Turkish">Turkish</option>
+            <option value="Arabic" selected="">Arabic</option>
+            <option value="Greek">Greek</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input
+            class="form-control valid"
+            name="word_count"
+            id="word_count"
+            type="text"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Word Count'"
+            placeholder="Word Count"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            class="form-control valid"
+            name="name"
+            id="name"
+            type="text"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Enter your name'"
+            placeholder="Enter your name"
+          />
+        </div>
+
+        <div class="form-group">
+          <input
+            class="form-control valid"
+            name="email"
+            id="email"
+            type="email"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Enter email address'"
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="form-group title-put">
+          <label for="controlAploadFile "> Upload file : </label>
+
+          <input
+            type="file"
+            class="form-control-file"
+            name="fileAttach"
+            id="controlAploadFile"
+          />
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="form-group title-put">
+              <label for="message">Message:</label>
+              <textarea
+                class="form-control"
+                name="message"
+                id="message"
+                cols=""
+                rows=""
+                onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Enter Message'"
+                placeholder=" message"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="button button-contactForm boxed-btn">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  
+    <!-----------------S T A R T   H O M E   S E C T I O N ---------------------------------------->
+  <section class="home" id="home">
+   <div class="content">
+    <h3>Your Arabic Content Partner</h3>
+    <p>PrimeLingo is Your Gateway to Perfect Arabic Translations </p>
+    <a href="#Quote" class="boxed-btn">
+      <div class="icon" onclick="showform()" >
+        <i class=""> Qet A Quote </i>
+        
+      </div>
+    </a>
+  </div>
+   <div class="controls">
+   <span class="video-btn blue-var" data-src="images/Pexels-Mart-Production-8472216.m4v"></span>
+   <span class="video-btn"data-src="images/Pexels-Juancarlos-Córdova-7575445.m4v" ></span>
+   </div>
+    <div class="video-container">
+      <video src="images/Pexels-Mart-Production-8472216.m4v" id="video-slider" loop autoplay muted></video>
+
+    </div>
+</section>
+
+    <!-----------------S T A R T   S E R V I C E S   S E C T I O N ------------------------------------------------------------------->
+
+    <section class="services" id="OurServices">
+      <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+      <p class="p-services">
+        Communicating effectively with your target audience is essential for any
+        growing business. Whether you require a technical document to be
+        translated or a marketing campaign to be localized, PrimeLingo is
+        completely equipped to handle any type of project. Our linguistic teams
+        have the in-depth industry knowledge and business-domain expertise to
+        deliver accurate, compliant and engaging information to your target
+        audiences. Our translation and localization services include:
+      </p>
+
+      <div class="container">
+        <div class="box">
+          <img src="images/businessjpg.jpg" alt="" />
+          <div class="content">
+            <h3>Business Translation</h3>
+            <p>
+              Successful Business translation is very high on the list of
+              well-rounded services we provide, and it’s used by many of our
+              clients.....
+            </p>
+            <a href="our-services.html#business-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/technical.jpg" alt="" />
+          <div class="content">
+            <h3>Technical Translation</h3>
+            <p>
+              Translation of technical manuals and technical documents is a
+              challenging job that calls for an in-depth understanding of
+              technical....
+            </p>
+
+            <a href="our-services.html#technical-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/legaljpg.jpg" alt="" />
+          <div class="content">
+            <h3>Legal Translation Services</h3>
+            <p>
+              PrimeLingo provides the highest quality of legal translation
+              services to businesses seeking to expand in the Arabic-speaking
+              Countries....
+            </p>
+
+            <a href="our-services.html#legal-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/medical.jpg" alt="" />
+          <div class="content">
+            <h3>Medical and Pharmaceutical Translation</h3>
+            <p>
+              With a fully dedicated team of expert translators, PrimeLingo’s
+              life science division masters translation and localization of
+              medica.........
+            </p>
+
+            <a href="our-services.html#medical-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/Financial.jpg" alt="" />
+          <div class="content">
+            <h3>Financial Translation</h3>
+            <p>
+              The world economy is becoming increasingly integrated in all
+              business sectors and markets, and without accurate information and
+              communication, this level of information flow would be .....
+            </p>
+
+            <a href="our-services.html#financial-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/mobile marketing.jpg" alt="" />
+          <div class="content">
+            <h3>Mobile Marketing Translation</h3>
+            <p>
+              Mobile marketing is set to be one of the most important drivers
+              for change in the way that prospective customers will be engaging
+              with businesses in the future, and no marketer can ........
+            </p>
+            <a href="our-services.html#mobile-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/software.jpg" alt="" />
+          <div class="content">
+            <h3>Software Localization</h3>
+            <p>
+              Localizing your software into Arabic will allow you to tap into
+              new markets, and give your Arabic-speaking users a better
+              experience......
+            </p>
+
+            <a href="our-services.html#software-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/website.jpg" alt="" />
+          <div class="content">
+            <h3>Website Localization</h3>
+            <p>
+              The process of adapting the language, appearance and functionality
+              of a website for the Arabic markets needs someone expert
+            </p>
+
+            <a href="our-services.html#website-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/elearning.jpg" alt="" />
+          <div class="content">
+            <h3>E-Learning Localization</h3>
+            <p>
+              If you have a global organization with offices located in
+              Arabic-speaking countries and you need to construct a stable
+              communication...
+            </p>
+
+            <a href="our-industries.html#e-learning-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/marketing.jpg" alt="" />
+          <div class="content">
+            <h3>Marketing Translation</h3>
+            <p>
+              Translating marketing materials requires a careful approach to avoid
+              literal translation, thus confusing the message while ignoring
+
+            </p>
+
+            <a href="our-services.html#marketing-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/puplish.jpg" alt="" />
+          <div class="content">
+            <h3>Desktop Publishing (DTP)</h3>
+            <p>
+              At PrimeLingo we provide a complete creative translation service
+              to make sure that the Arabic version of your documents matc ......
+            </p>
+            <a href="our-services.html#desktop-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="images/general translation.jpg" alt="" />
+          <div class="content">
+            <h3>General Translation</h3>
+            <p>
+              Translating general documents that can’t be categorized under a
+              specific industry and don’t require any specialized
+              knowled...........
+            </p>
+
+            <a href="our-services.html#general-translation" class="boxed-btn">More....</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!------------------S T A R T   I N D U S T R I  E S   S E C T I O N ------------------------------------------------------------------>
+
+    <section class="industries" id="industries">
+      <h1 class="heading">
+        <span>i</span>
+        <span>n</span>
+        <span>d</span>
+        <span>u</span>
+        <span>s</span>
+        <span>t</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+      </h1>
+      <p class="p-industries">
+        PrimeLingo’s expert linguists can deliver sophisticated translated
+        content of any industry across the globe. We strive to get your business
+        succeed and to help your brand to spread and solidify. We deploy all of
+        our resources, technology and skills to provide an accurate and
+        technical translation of large volumes of information, without missing
+        deadlines and providing content that complies with regulations and
+        standards. We translate and localize documents from all kinds of
+        industries such as:
+      </p>
+
+      <div class="container">
+        <div class="box">
+          <i class="fa-solid fa-plug-circle-plus"></i>
+          <h3>Electronics Translation Services</h3>
+          <p>
+            Translating electronics texts can be a little trickier than
+            translating general topics. Our team of professional translators can
+            tackle a multitude of different.......
+          </p>
+          <a href="our-industries.html#electronic-translation" class="boxed-btn">More....</a>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-comment-dollar"></i>
+          <h3>Financial Translation Services</h3>
+          <p>
+            Our financial translation services are designed to meet the needs of
+            the financial and banking sector; our experts understand the
+            financial terminology that you......
+          </p>
+          <a href="our-industries.html#financ-translation" class="boxed-btn">More....</a>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-scale-balanced"></i>
+          <h3>Legal</h3>
+          <p>
+            At PrimeLingo demolishing barriers and building bridges is our
+            motto, so choosing us will get you one step closer to do business in
+            any Arabic-speaking country without any worry regarding the legal
+            aspect .......
+          </p>
+          <a href="our-industries.html#legal-translation" class="boxed-btn">More....</a>
+        </div>
+        <div class="box" id="">
+          <i class="fa-solid fa-flask-vial"></i>
+          <h3>Medical & Pharmaceutical and Health Care</h3>
+          <p>
+            Pharmaceutical, Medical Device and Healthcare industries rely on
+            experts in the life science sector for the most complex medical
+            translations. It also require......
+          </p>
+          <a href="our-industries.html#medical-translation" class="boxed-btn">More....</a>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-circle-play"></i>
+          <h3>Smart Governments</h3>
+          <p>
+            PrimeLingo’s team of professional translators is very aware of the
+            sensitivity of translating content for governments and that
+            confidentiality is a key factor......
+          </p>
+          <a href="our-industries.html#government-translation" class="boxed-btn">More....</a>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-car"></i>
+          <h3>Automotive Translation Services</h3>
+          <p>
+            The automotive industry is extremely vast and interchangeable, and
+            at PrimeLingo we have the reliable resources necessary to ensure
+            that your automotive.........
+          </p>
+          <a href="our-industries.html#automotive-translation" class="boxed-btn">More....</a>
+        </div>
+        <div class="box">
+          <i class="fa-solid fa-chart-simple"></i>
+          <h3>Marketing & Advertising</h3>
+          <p>
+            Translating marketing materials requires a careful approach to avoid
+            literal translation, thus confusing the message while ignoring the
+            cultural context..........
+          </p>
+          <a href="our-industries.html#marketing-translation" class="boxed-btn">More....</a>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-computer"></i>
+          <h3>Software</h3>
+          <p>
+            When trying to expand your clientele to the Middle East and North
+            Africa (MENA) region, localizing your software is the answer to
+            that, because localiz.........
+          </p>
+          <a href="our-industries.html#software-translation" class="boxed-btn">More....</a>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-plane"></i>
+          <h3>Travel & Tourism</h3>
+          <p>
+            Whether you need translations for a hotel chain, localization for a
+            travel agency, or any translation service for the tourism and
+            hospitality industr............
+          </p>
+          <a href="our-industries.html#travel-translation" class="boxed-btn">More....</a>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h3>Global E-learning And Training Translation Services</h3>
+          <p>
+            If you have a global organization with offices located in
+            Arabic-speaking countries and you need to construct a stable
+            communication system between you and your employees, you can easily
+            achieve that by using our e-learning and training translation
+            services, so your corporate
+          </p>
+          <a href="our-industries.html#e-learning-translation" class="boxed-btn">More....</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!--------------------S T A R T   R E V I E W    S E C T I O N--------------------------------------------------------------------->
+
+    <section class="review" id="review">
+      <h1 class="heading">
+        <span>R</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        <span>s</span>
+      </h1>
+
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/eslam_n.jpg" alt="" />
+              <h3>Mr/Eslam Alsakhawy</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores totam, voluptatem non debitis illum tenetur cum quasi
+                corporis veritatis unde.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/eslam_n.jpg" alt="" />
+              <h3>Mr/Eslam Alsakhawy</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores totam, voluptatem non debitis illum tenetur cum quasi
+                corporis veritatis unde.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/eslam_n.jpg" alt="" />
+              <h3>Mr/Eslam Alsakhawy</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores totam, voluptatem non debitis illum tenetur cum quasi
+                corporis veritatis unde.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="box">
+              <img src="images/eslam_n.jpg" alt="" />
+              <h3>Mr/Eslam Alsakhawy</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Asperiores totam, voluptatem non debitis illum tenetur cum quasi
+                corporis veritatis unde.
+              </p>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-----------------------S T A R T   A B O U T    S E C T I O N------------------------------------------------------------------------------>
+
+    <section class="about" id="about">
+      <h1 class="heading">
+        <span>A</span>
+        <span>b</span>
+        <span>o</span>
+        <span>u</span>
+        <span>t</span>
+        <span>U</span>
+        <span>s</span>
+      </h1>
+
+      <div class="row">
+        <div class="about-content">
+          <h4>About us</h4>
+          <p>
+           <span>PrimeLingo</span>  is a professional translation and localization services
+            agency that specialized in English to Arabic solutions. Our team of
+            professional translators is very talented and creative, with supreme
+            qualifications to back them up. They’re skilled linguists with much
+            expertise in subject matter. Our esteemed C.E.O./Founder has over 15
+            years of experience in the translation and localization services in
+            various fields. He singlehandedly built this company armed with his
+            superior language skills and work ethic, and he carefully selected
+            and recruited the right staff to achieve the vision of the company.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/question (1).svg" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-content">
+          <h4>
+            Our vision:</h4>
+          <p>
+            We aim to help global businesses laying the groundwork in the Middle East and North Africa region, by using translated materials as its concrete.
+            Our gifted team of translators and localizers work really hard for PrimeLingo to become a prominent translation services company provider that’s very well known to the world and the biggest translation services company in the Middle East region.
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/earth).svg" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-content">
+          <h4>
+            Our mission:</h4>
+          <p >
+            We strive to be your ideal business partner and your link to the Arab world. We’ll help you see and achieve the full potential of doing business in the Arabic markets. Our main objectives are:
+         <ul>
+            <li class="mission">To offer guaranteed Arabic translation services to our customers.</li>
+            <li class="mission"> To build strong partnerships with our customers and to always take into consideration their requirements as top priority.</li>
+            <li class="mission"> To offer a wide variety of services that meets our customers’ needs. </li>
+            <li class="mission"> To provide the linguistic solutions specific to the preferences of our customers.</li>
+          </ul>
+            
+          </p>
+        </div>
+        <div class="image">
+          <img src="images/target.svg" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-content">
+          <h4>Tools we use:</h4>
+          <ul class="our-tools">
+            <li class="tools">Trados</li>
+            <li class="tools">Wordfast</li>
+            <li class="tools">MemoQ</li>
+            <li class="tools">Memsource</li>
+            <li class="tools">Matecat</li>
+            <li class="tools">Many More</li>
+          </ul>
+
+        </div>
+        <div class="image">
+          <img src="images/about-img.svg" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-content">
+          <h4>Our values:</h4>
+          <h5>Integrity</h5>
+          <p>
+            We believe that there is no more important trait in business and in life than integrity.
+          </p>
+          
+          <h5>Quality</h5>
+          <p>
+            We always seek to deliver the highest quality end products and solutions, and we pride ourselves on providing nothing less than superior work.          </p>
+          
+          <h5>Respect</h5>
+          <p>
+            Mutual respect between us and our customers is a must, and it’ll help strengthen our partnership, hence ensuring success.          </p>
+          
+          <h5>Teamwork</h5>
+          <p>
+            Our diligent translators understand that teaming up and collaborating would ensure achieving our common goal efficiently and quite faster.          </p>
+          
+          <h5>Financial Responsibility</h5>
+          <p>
+            We’ll use our wisdom, business savvy and financial responsibility to treat the company’s money like our own.          </p>
+          
+          <h5>Trust</h5>
+          <p>
+            Trust is imperative when it comes to our line of work. You’re entrusting us with your business which is your passion and we understand that completely and we put our working plan to help achieving so.          </p>
+          
+          <h5>Cooperation</h5>
+          <p>
+            For a successful translation service a smooth cooperation between the client and the service provider must be achieved, both sides need to be prepared to give their best to meet the requirements of the other side.        </div>
+      
+      </div>
+      </div>
+    </section>
+
+    <!-- -----------------------S T A R T   C O N T A C T   S E C T I O N----------------------------------------------------------------------------------------------------------------- -->
+
+     <section class="contact" id="contact">
+      <h1 class="heading">
+        <span>C</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>U</span>
+        <span>s</span>
+      </h1>
+
+      <div class="row">
+        
+        <form action="">
+          <div class="input-box">
+            <input type="text" placeholder="name" />
+            <input type="email" placeholder="email" />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="number" />
+            <input type="text" placeholder="subject" />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="message"
+          ></textarea>
+          <input type="submit" class="boxed-btn" value="send message" />
+        </form>
+        <div class="image">
+          <img src="images/contact-us(1).svg" alt="" />
+        </div>
+      </div>
+    </section> 
+
+    <!----------------------------S T A R T   F O O T E R   S E C T I O N --------------------------------------------------------------->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><a href="">
+            <img src="images/logo.png">
+          </a></h3>
+          <p>
+            <span>With us, nothing will get lost in translation!</span>
+            PrimeLingo is Egypt based translation and localization agency so we have the best native Arabic translators in the Middle East, with an accompanying expertise in all business sectors,
+             ensuring that all of your Arabic translation projects will always meet the most stringent standards for quality and accuracy.
+          </p>
+        </div>
+        <div class="box">
+          <h3>location <i class="fa-solid fa-location-dot"></i></h3>
+      <p>Flat 53, Building 21, Group 111, B 11, Madinaty, New Cairo, Egypt</p>
+      <h3>Contact <i class="fa-solid fa-phone"></i></h3>
+      <div class="call_add_action">
+        <a href="#contact" class="boxed-btn3">+20 1014993375</a>
+        <a href="#contact" class="boxed-btn3">info@prime-lingo.com</a>
+    </div>
+        </div>
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#home">Home</a>
+          <a href="#about">About US</a>
+          <a href="#contact">Contact US</a>
+          <a href="arabic.html">العربية</a>
+        </div>
+        <div class="box">
+          <h3>follow us</h3>
+          <span>          <a href="https://www.facebook.com/profile.php?id=100064048928738"><i class="fa-brands fa-facebook"></i></a>
+          </span>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+      <h1 class="created">
+        created by <span>Hatem Al-sawah</span> all right reserved
+      </h1>
+    </section>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/lingo.js"></script>
+  </body>
+</html>
